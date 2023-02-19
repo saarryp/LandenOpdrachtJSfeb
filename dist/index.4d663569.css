@@ -18,17 +18,19 @@ h1 {
 
 p {
   color: #789;
+  border: #ff1493;
   font-size: 16px;
 }
 
-outer-content-container {
+.outer-content-container {
   width: 100%;
+  border: 2px dashed #ff1493;
   flex-direction: row;
   justify-content: center;
   display: flex;
 }
 
-inner-content-container {
+.inner-content-container {
   flex-direction: column;
   flex: 0 1400px;
   align-items: center;
@@ -43,6 +45,16 @@ inner-content-container {
 
 .default-area-padding {
   padding: 100px 0;
+}
+
+.landkaart {
+  width: 100%;
+  max-width: 800px;
+  border: 2px #00bfff;
+}
+
+.image-wrapper {
+  flex: 0 800px;
 }
 
 .blue {
@@ -72,10 +84,14 @@ ul {
   padding: 20px;
 }
 
+.country-names {
+  border: 2px #ff1493;
+}
+
 div {
   text-align: center;
   height: 600px;
-  border: #000;
+  border: 4px #000;
   border-radius: 4px;
 }
 

@@ -21,12 +21,13 @@ h1 {
 p {
     font-size: 16px;
     color: lightslategray;
+    border: deeppink;
 
 }
 
 /*REUSABLES*/
 
-outer-content-container {
+.outer-content-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -34,7 +35,7 @@ outer-content-container {
     border: 2px dashed deeppink;
 }
 
-inner-content-container {
+.inner-content-container {
     flex-basis: 1400px;
     flex-shrink: 1;
     flex-grow: 0;
@@ -53,7 +54,18 @@ inner-content-container {
     padding: 100px 0;
 }
 
+.landkaart {
+    border: 2px deepskyblue;
+    width: 100%;
+    max-width: 800px;
+}
 
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}
 .blue {
     color: blue;
 }
@@ -81,11 +93,14 @@ ul {
     padding: 20px;
 
 }
+.country-names {
+    border: 2px deeppink;
+}
 
 div {
     text-align: center;
     border-radius: 4px;
-    border: black;
+    border: 4px black;
     height: 600px;
 
     /*flexbox*/
