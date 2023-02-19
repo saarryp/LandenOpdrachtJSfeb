@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "American Typewriter" Chalkboard;
+  border: 3px #00bfff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: Chalkboard;
+  font-size: 40px;
+}
+
+p {
+  color: #789;
+  font-size: 16px;
+}
+
+outer-content-container {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+inner-content-container {
+  flex-direction: column;
+  flex: 0 1400px;
+  align-items: center;
+  margin: 0 20px;
+  display: flex;
+}
+
+.default-text-restrictor {
+  max-width: 850px;
+  text-align: center;
+}
+
+.default-area-padding {
+  padding: 100px 0;
+}
+
+.blue {
+  color: #00f;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.geel {
+  color: #ff0;
+}
+
+.purple {
+  color: #9370db;
+}
+
+ul {
+  text-align: center;
+  border: 1px #a9a9a9;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+div {
+  text-align: center;
+  height: 600px;
+  border: #000;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
