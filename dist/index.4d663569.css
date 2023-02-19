@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "American Typewriter" Chalkboard;
   border: 3px #00bfff;
+  font-family: American Typewriter;
   font-size: 20px;
   font-weight: 300;
 }
@@ -51,6 +51,7 @@ p {
   width: 100%;
   max-width: 800px;
   border: 2px #00bfff;
+  padding: 20px;
 }
 
 .image-wrapper {
@@ -81,16 +82,30 @@ ul {
   text-align: center;
   border: 1px #a9a9a9;
   border-radius: 4px;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+  list-style: none;
+  display: flex;
 }
 
-.country-names {
+#country-list {
+  border: 2px #789;
+  list-style: none;
+}
+
+#country-names {
+  flex-basis: calc(33, 33% - 10px);
+  background-color: #f0f8ff;
   border: 2px #ff1493;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 div {
   text-align: center;
-  height: 600px;
+  height: 1000px;
   border: 4px #000;
   border-radius: 4px;
 }
