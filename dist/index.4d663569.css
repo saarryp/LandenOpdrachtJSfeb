@@ -24,7 +24,6 @@ p {
 
 .outer-content-container {
   width: 100%;
-  border: 2px dashed #ff1493;
   flex-direction: row;
   justify-content: center;
   display: flex;
@@ -45,6 +44,13 @@ p {
 
 .default-area-padding {
   padding: 100px 0;
+}
+
+header {
+  text-align: center;
+  height: 1000px;
+  border: 4px #000;
+  border-radius: 4px;
 }
 
 .landkaart {
@@ -71,7 +77,7 @@ p {
 }
 
 .geel {
-  color: #ff0;
+  color: orange;
 }
 
 .purple {
@@ -80,34 +86,22 @@ p {
 
 ul {
   text-align: center;
-  border: 1px #a9a9a9;
+  background-color: #e0ffff;
+  border: 1px #e0ffff;
   border-radius: 4px;
   flex-flow: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
 }
 
-#country-list {
-  border: 2px #789;
-  list-style: none;
-}
-
-#country-names {
-  flex-basis: calc(33, 33% - 10px);
-  background-color: #f0f8ff;
-  border: 2px #ff1493;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-div {
-  text-align: center;
-  height: 1000px;
-  border: 4px #000;
-  border-radius: 4px;
+.opsomming-landen {
+  border: 2px solid gray;
+  padding: 2px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */

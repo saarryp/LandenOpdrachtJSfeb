@@ -32,7 +32,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px dashed deeppink;
+    /*border: 2px dashed deeppink;*/
 }
 
 .inner-content-container {
@@ -43,6 +43,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+   /* border: 2px groove lightslategrey;*/
 }
 
 .default-text-restrictor {
@@ -53,6 +54,14 @@ p {
 .default-area-padding {
     padding: 100px 0;
 }
+
+header {
+    text-align: center;
+    border-radius: 4px;
+    border: 4px black;
+    height: 1000px;
+}
+
 
 .landkaart {
     border: 2px deepskyblue;
@@ -80,7 +89,7 @@ p {
 }
 
 .geel {
-    color: yellow;
+    color: orange;
 }
 
 .purple {
@@ -90,34 +99,27 @@ p {
 ul {
     text-align: center;
     border-radius: 4px;
-    border: 1px darkgrey;
-    padding: 20px;
+    border: 1px lightcyan;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
-    align-items: center;
+    align-items: stretch;
+    background-color: lightcyan;
 
 }
 
-#country-list {
-    list-style: none;
-    border-style: groove;
-    border: 2px lightslategrey;
+.opsomming-landen {
+    border: 2px solid grey;
+    padding: 2px;
+    display: inline-block;
 
 }
-#country-names {
-    background-color: aliceblue;
-    border: 2px deeppink;
-    padding: 10px;
-    flex-basis: calc(33,33% - 10px);
-    margin-bottom: 10px;
-}
 
-div {
-    text-align: center;
-    border-radius: 4px;
-    border: 4px black;
-    height: 1000px;
-}
+/*krijg de komma's niet weg tussen de list-items, van alles geprobeerd...*/
+
+
+

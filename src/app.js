@@ -36,6 +36,11 @@ function countryItem(countries) {
     })
 }
 
+
+
+
+
+
 function regionColor(region) {
     switch(region) {
         case 'Africa':
