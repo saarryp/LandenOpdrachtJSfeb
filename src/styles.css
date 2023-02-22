@@ -1,0 +1,125 @@
+
+/* GLOBAL STYLES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: American Typewriter;
+    font-weight: 300;
+    font-size: 20px;
+    border: 3px deepskyblue;
+}
+
+/*typography*/
+h1 {
+    font-size: 40px;
+    font-family: Chalkboard;
+}
+
+p {
+    font-size: 16px;
+    color: lightslategray;
+    border: deeppink;
+
+}
+
+/*REUSABLES*/
+
+.outer-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*border: 2px dashed deeppink;*/
+}
+
+.inner-content-container {
+    flex-basis: 1400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* border: 2px groove lightslategrey;*/
+}
+
+.default-text-restrictor {
+    max-width: 850px;
+    text-align: center;
+}
+
+.default-area-padding {
+    padding: 100px 0;
+}
+
+header {
+    text-align: center;
+    border-radius: 4px;
+    border: 4px black;
+    height: 1000px;
+}
+
+
+.landkaart {
+    border: 2px deepskyblue;
+    width: 100%;
+    max-width:800px;
+    padding: 20px;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.geel {
+    color: orange;
+}
+
+.purple {
+    color: mediumpurple;
+}
+
+ul {
+    text-align: center;
+    border-radius: 4px;
+    border: 1px lightcyan;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: stretch;
+    background-color: lightcyan;
+
+}
+
+.opsomming-landen {
+    border: 2px solid grey;
+    padding: 2px;
+    display: inline-block;
+
+}
+
+/*krijg de komma's niet weg tussen de list-items, van alles geprobeerd...*/
+
+
+
