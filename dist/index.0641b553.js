@@ -566,7 +566,7 @@ async function fetchData() {
         const countries = response.data;
         console.log(response.data);
         countries.sort((a, b)=>{
-            return a.region - b.region;
+            return a.population - b.population;
         });
         countryItem(countries);
     } catch (e) {
@@ -576,15 +576,16 @@ async function fetchData() {
 fetchData();
 function countryItem(countries) {
     const countryList = document.getElementById("country-list");
-    countryList.innerHTML = countries.map((country)=>{
+    const allCountries = countries.map((country)=>{
         return `
-                <li>
+                <li class="opsomming-landen">
             <p class="${regionColor(country.region)}">${country.name}</p>
             <img src="${country.flags.svg}" alt="Vlag van het land ${country.name}" width="50px"/>
             <p>Population ${country.population}</p>
                 </li>
-    `;
+                `;
     });
+    countryList.innerHTML = allCountries.join(" </br>");
 }
 function regionColor(region) {
     switch(region){
@@ -602,6 +603,9 @@ function regionColor(region) {
             return "default";
     }
 }
+/*krijg de komma's niet weg tussen de vlaggen*/ /*const countries = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
+const countriesList = document.getElementById("country-list");
+countriesList.innerHTML = countryMap.join('');*/ const colors = regions.map(regionColor).join("");
 
 },{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

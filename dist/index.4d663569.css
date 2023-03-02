@@ -55,9 +55,9 @@ header {
 
 .landkaart {
   width: 100%;
-  max-width: 800px;
   border: 2px #00bfff;
   padding: 20px;
+  display: flex;
 }
 
 .image-wrapper {
@@ -86,15 +86,16 @@ header {
 
 ul {
   text-align: center;
+  columns: 3;
   background-color: #e0ffff;
   border: 1px #e0ffff;
   border-radius: 4px;
   flex-flow: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   display: flex;
 }
 
