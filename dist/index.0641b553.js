@@ -603,9 +603,6 @@ function regionColor(region) {
             return "default";
     }
 }
-/*krijg de komma's niet weg tussen de vlaggen*/ /*const countries = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
-const countriesList = document.getElementById("country-list");
-countriesList.innerHTML = countryMap.join('');*/ const colors = regions.map(regionColor).join("");
 
 },{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

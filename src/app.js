@@ -60,10 +60,3 @@ function regionColor(region) {
 }
 
 
-/*krijg de komma's niet weg tussen de vlaggen*/
-/*const countries = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
-const countriesList = document.getElementById("country-list");
-countriesList.innerHTML = countryMap.join('');*/
-
-
-const colors = regions.map(regionColor).join('');
