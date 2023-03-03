@@ -59,4 +59,37 @@ function regionColor(region) {
     }
 }
 
+/*deel 2 van de opdracht */
+//eventlistener maken voor button; //
+//
 
+
+const searchForm = document.getElementById('search-form');
+const searchResult = document.getElementById('search-result');
+searchForm.addEventListener('submit', searchCountry);
+
+function searchCountry(e) {
+    const searchValue = document.getElementById('search-value');
+    fetchData(searchValue.value);
+
+    searchValue.value ='';
+
+
+}
+
+async function fetchCountryInformation(name) {
+    searchResult.innerHTML = ``;
+
+    try {
+        const result = await axios.get(`https://restcountries.com/v2/name/${name}`)
+        const country = result.data[0];
+        console.log(result.country);
+
+        searchResult.innerHTML =`
+        <h3>${country.name}</h3>
+        <p> ${country.region} ${currencyCreator(country.currencies)} </p>`
+    } catch (e) {
+        console.error(e)
+
+    }
+}

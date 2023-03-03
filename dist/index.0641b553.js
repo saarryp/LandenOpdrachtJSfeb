@@ -603,6 +603,29 @@ function regionColor(region) {
             return "default";
     }
 }
+/*deel 2 van de opdracht */ //eventlistener maken voor button; //
+//
+const searchForm = document.getElementById("search-form");
+const searchResult = document.getElementById("search-result");
+searchForm.addEventListener("submit", searchCountry);
+function searchCountry(e) {
+    const searchValue = document.getElementById("search-value");
+    fetchData(searchValue.value);
+    searchValue.value = "";
+}
+async function fetchCountryInformation(name) {
+    searchResult.innerHTML = ``;
+    try {
+        const result = await (0, _axiosDefault.default).get(`https://restcountries.com/v2/name/${name}`);
+        const country = result.data[0];
+        console.log(result.country);
+        searchResult.innerHTML = `
+        <h3>${country.name}</h3>
+        <p> ${country.region} ${currencyCreator(country.currencies)} </p>`;
+    } catch (e) {
+        console.error(e);
+    }
+}
 
 },{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
