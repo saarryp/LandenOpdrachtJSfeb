@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: American Typewriter;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: Chalkboard;
+  font-size: 40px;
+}
+
+p {
+  color: #789;
+  font-size: 16px;
+}
+
+.outer-content-container {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+.inner-content-container {
+  flex-direction: column;
+  flex: 0 1400px;
+  align-items: center;
+  margin: 0 20px;
+  display: flex;
+}
+
+.default-text-restrictor {
+  max-width: 850px;
+  text-align: center;
+}
+
+.default-area-padding {
+  padding: 100px 0;
+}
+
+header {
+  text-align: center;
+  height: 1000px;
+  border: 4px #000;
+  border-radius: 4px;
+}
+
+.landkaart {
+  width: 100%;
+  border: 2px #00bfff;
+  padding: 20px;
+  display: flex;
+}
+
+.image-wrapper {
+  flex: 0 800px;
+}
+
+.blue {
+  color: #00f;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.geel {
+  color: orange;
+}
+
+.purple {
+  color: #9370db;
+}
+
+#country-list {
+  column-count: 3;
+  max-width: 1000px;
+  background-color: #e0ffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 30px;
+  list-style-type: none;
+}
+
+.opsomming-landen {
+  padding: 2px;
+  display: inline-block;
+}
+
+.population {
+  margin: 0 0 12px;
+  font-size: 10px;
+}
+
+.flag {
+  width: 20px;
+  margin: 0 0 12px;
+  font-size: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-family: American Typewriter;
+  font-size: 25px;
+}
+
+#label-size {
+  width: 150px;
+  height: 50px;
+}
+
+.button-press {
+  width: 70px;
+  height: 50px;
+  background-color: #e0ffff;
+  border-radius: 2px;
+}
+
+.input-field {
+  padding: 1em 2em;
+}
+
+h3 {
+  color: #000;
+  padding: 20px;
+}
+
+.information-country {
+  text-align: center;
+  height: 200px;
+  padding: 20px;
+}
+
+.information-currency {
+  color: #a9a9a9;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-color: #00bfff;
+  font-size: 12px;
+  display: flex;
+}
+
+.search-result-box p {
+  border-color: #e0ffff;
+  padding: 8px 0;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */

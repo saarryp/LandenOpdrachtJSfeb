@@ -1,0 +1,196 @@
+
+/* GLOBAL STYLES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: American Typewriter;
+    font-weight: 300;
+    font-size: 20px;
+    /*border: 3px deepskyblue;*/
+}
+
+/*typography*/
+h1 {
+    font-size: 40px;
+    font-family: Chalkboard;
+}
+
+p {
+    font-size: 16px;
+    color: lightslategray;
+    /*border: deeppink;*/
+
+}
+
+/*REUSABLES*/
+
+.outer-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*border: 2px dashed deeppink;*/
+}
+
+.inner-content-container {
+    flex-basis: 1400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /*border: 2px groove lightslategrey;*/
+}
+
+.default-text-restrictor {
+    max-width: 850px;
+    text-align: center;
+}
+
+.default-area-padding {
+    padding: 100px 0;
+}
+
+header {
+    text-align: center;
+    border-radius: 4px;
+    border: 4px black;
+    height: 1000px;
+}
+
+
+.landkaart {
+    border: 2px deepskyblue;
+    width: 100%;
+    /*max-width:800px;*/
+    display: flex;
+    padding: 20px;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.geel {
+    color: orange;
+}
+
+.purple {
+    color: mediumpurple;
+}
+
+/*ul {
+    text-align: center;
+    border-radius: 4px;
+    border: 1px lightcyan;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: stretch;
+    background-color: lightcyan;
+    columns: 3;
+
+}*/
+
+#country-list {
+    list-style-type: none;
+    column-count: 3;
+    max-width: 1000px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    padding: 30px;
+    background-color: lightcyan;
+}
+
+.opsomming-landen {
+    /*border: 2px solid grey;*/
+    padding: 2px;
+    display: inline-block;
+}
+.population {
+    margin: 0 0 12px 0;
+    font-size: 10px;
+}
+
+.flag {
+    width: 20px;
+    margin: 0 0 12px 0;
+    font-size: 10px;
+}
+
+/*deel2 van opdracht*/
+
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: "American Typewriter";
+}
+
+
+#label-size {
+    width: 150px;
+    height: 50px;
+}
+
+.button-press {
+    width: 70px;
+    height: 50px;
+    background-color: lightcyan;
+    border-radius: 2px;
+}
+
+.input-field {
+    padding: 1em 2em;
+}
+h3 {
+    color: black;
+    padding: 20px;
+}
+
+
+.information-country {
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+
+}
+
+.information-currency {
+    font-size: 12px;
+    color: darkgrey;
+    border-color: deepskyblue;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+}
+
+.search-result-box p {
+
+    padding: 8px 0;
+    border-color: lightcyan;
+
+}
