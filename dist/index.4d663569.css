@@ -5,7 +5,6 @@
 }
 
 body {
-  border: 3px #00bfff;
   font-family: American Typewriter;
   font-size: 20px;
   font-weight: 300;
@@ -18,7 +17,6 @@ h1 {
 
 p {
   color: #789;
-  border: #ff1493;
   font-size: 16px;
 }
 
@@ -113,7 +111,7 @@ header {
 h2 {
   text-align: center;
   font-family: American Typewriter;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 #label-size {
@@ -126,6 +124,36 @@ h2 {
   height: 50px;
   background-color: #e0ffff;
   border-radius: 2px;
+}
+
+.input-field {
+  padding: 1em 2em;
+}
+
+h3 {
+  color: #000;
+  padding: 20px;
+}
+
+.information-country {
+  text-align: center;
+  height: 200px;
+  padding: 20px;
+}
+
+.information-currency {
+  color: #a9a9a9;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-color: #00bfff;
+  font-size: 12px;
+  display: flex;
+}
+
+.search-result-box p {
+  border-color: #e0ffff;
+  padding: 8px 0;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */

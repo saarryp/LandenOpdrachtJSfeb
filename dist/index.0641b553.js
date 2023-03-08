@@ -564,7 +564,7 @@ async function fetchData() {
     try {
         const response = await (0, _axiosDefault.default).get("https://restcountries.com/v2/all");
         const countries = response.data;
-        console.log(response.data);
+        // console.log(response.data);
         countries.sort((a, b)=>{
             return a.population - b.population;
         });
@@ -609,23 +609,49 @@ const searchForm = document.getElementById("search-form");
 const searchResult = document.getElementById("search-result");
 searchForm.addEventListener("submit", searchCountry);
 function searchCountry(e) {
+    e.preventDefault();
     const searchValue = document.getElementById("search-value");
-    fetchData(searchValue.value);
+    // fetchData(searchValue.value);
+    fetchCountryInformation(searchValue.value);
     searchValue.value = "";
 }
 async function fetchCountryInformation(name) {
     searchResult.innerHTML = ``;
+    // gegevens ophalen van land
     try {
         const result = await (0, _axiosDefault.default).get(`https://restcountries.com/v2/name/${name}`);
+        // console.log(result)
         const country = result.data[0];
-        console.log(result.country);
+        console.log(country);
         searchResult.innerHTML = `
-        <h3>${country.name}</h3>
-        <p> ${country.region} ${currencyCreator(country.currencies)} </p>`;
+           <article class="search-result-box">
+            <span class ="flag-title-container">
+                <img src="$country.flag" alt="vlag" class="flag">
+                <h2>${country.name}</h2>
+                 <p> ${country.region}</p>   
+             </span>
+    <p>${country.name} is situated in ${country.subregion}. It has a population of ${country.population} people. </p>
+    <p>The capital is ${country.capital} ${createCurrencyDescription(country.currencies)}</p>
+    <p>They speak ${country.language} .</p>
+    </article>
+`;
     } catch (e) {
         console.error(e);
     }
 }
+fetchCountryInformation();
+function createCurrencyDescription(currencies) {
+    let output = "and you can pay with .";
+    if (currencies.length === 2) return output + `${currencies.name} and ${currencies.name}`;
+    return output + `${currencies[0].name}`;
+} // function languageSpeak(language) {
+ //     let output2 = "They speak .";
+ //     if (language.length === 2) {
+ //         return output2 + `${country.language} and ${country.language}`;
+ //     }
+ //     return output2 + `${country.language}`;
+ //
+ // }
 
 },{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
